@@ -5,4 +5,5 @@ RUN go mod download
 COPY main.go ./
 RUN go build -o /test-cloud-run
 #EXPOSE 8080
+ENV PORT=8080
 CMD ["/test-cloud-run"]

@@ -20,7 +20,7 @@ func main(){
 	}
 	log.Printf("listening on port %s",port)
 
-   err:=http.ListenAndServe(port,nil)
+   err:=http.ListenAndServe(":"+port,nil)
    if err!=nil {
    		log.Print("couldn't start server")
    }

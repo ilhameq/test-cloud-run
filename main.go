@@ -22,6 +22,6 @@ func main(){
 
    err:=http.ListenAndServe(":"+port,nil)
    if err!=nil {
-   		log.Print("couldn't start server")
+   		log.Print("couldn't start server ",err)
    }
 }
